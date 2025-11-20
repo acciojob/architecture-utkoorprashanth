@@ -1,1 +1,81 @@
 /*  your css code here. If applicable */
+/* General Structure */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for the page */
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* 1. The entire content of the webpage should have a width of 1100px. */
+.webpageContainer {
+    width: 1100px;
+    background-color: #ffffff; /* White background for the content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Image Container Styling */
+.imageContainer img {
+    width: 100%; /* Make the image fill the container width (1100px) */
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Table Structure and Styling */
+table {
+    width: 100%; /* Table takes the full 1100px width */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* 4. The width attribute value for the first and last columns should be 200, 
+   and for the middle column, it should be 600. 
+   Total width is 200 + 600 + 200 = 1000px. The remaining 100px is for padding and borders. 
+   Using max-width is often better than width with border-collapse: collapse. */
+.col-200 {
+    max-width: 200px; 
+    width: 200px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    vertical-align: top;
+}
+
+.col-600 {
+    max-width: 600px;
+    width: 600px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+/* Image within table cells */
+td img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styling for visual enhancement */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #007bff;
+    margin-top: 0;
+}
